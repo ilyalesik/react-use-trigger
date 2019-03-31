@@ -1,7 +1,7 @@
 # react-use-trigger
 
-[![Build Status](https://travis-ci.org/ilyalesik/react-use-trigger.svg?branch=master)](https://travis-ci.org/ilyalesik/react-fetch-hook)
-[![npm version](https://img.shields.io/npm/v/react-use-trigger.svg)](https://www.npmjs.com/package/react-fetch-hook)
+[![Build Status](https://travis-ci.org/ilyalesik/react-use-trigger.svg?branch=master)](https://travis-ci.org/ilyalesik/react-use-trigger)
+[![npm version](https://img.shields.io/npm/v/react-use-trigger.svg)](https://www.npmjs.com/package/react-use-trigger)
 
 React Hook for trigger effect from any place of code.
 
