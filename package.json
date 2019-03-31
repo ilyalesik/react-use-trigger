@@ -12,7 +12,7 @@
     "build:clean": "rimraf dist",
     "build:lib": "cross-env BABEL_ENV=production babel src --out-dir dist --ignore '**/__tests__/**'",
     "build:flow": "gen-flow-files src --out-dir dist",
-    "prepublish": "npm run flow:check && npm run build"
+    "prepublish": "npm run flow:check && npm run test && npm run build"
   },
   "keywords": [
     "react",
@@ -30,7 +30,8 @@
   ],
   "pre-commit": [
     "prettier",
-    "flow:check"
+    "flow:check",
+    "test"
   ],
   "author": "Ilya Lesik <ilialesik@gmail.com>",
   "license": "MIT",
