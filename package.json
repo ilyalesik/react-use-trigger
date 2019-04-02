@@ -8,11 +8,12 @@
     "flow:check": "flow check",
     "test": "jest --silent",
     "prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write && git add . && git status",
+    "check-size": "size-limit",
     "build": "npm run build:clean && npm run build:lib && npm run build:flow",
     "build:clean": "rimraf dist",
     "build:lib": "cross-env BABEL_ENV=production babel src --out-dir dist --ignore '**/__tests__/**'",
     "build:flow": "gen-flow-files src --out-dir dist",
-    "prepublish": "npm run flow:check && npm run test && npm run build"
+    "prepublish": "npm run flow:check && npm run test && npm run build && npm run check-size"
   },
   "keywords": [
     "react",
@@ -32,6 +33,12 @@
     "prettier",
     "flow:check",
     "test"
+  ],
+  "size-limit": [
+    {
+      "path": "dist/index.js",
+      "limit": "1kb"
+    }
   ],
   "author": "Ilya Lesik <ilialesik@gmail.com>",
   "license": "MIT",
@@ -58,6 +65,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-testing-library": "^6.0.3",
-    "rimraf": "^2.6.3"
+    "rimraf": "^2.6.3",
+    "size-limit": "^1.0.0"
   }
 }
