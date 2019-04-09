@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/ilyalesik/react-use-trigger.svg?branch=master)](https://travis-ci.org/ilyalesik/react-use-trigger)
 [![npm version](https://img.shields.io/npm/v/react-use-trigger.svg)](https://www.npmjs.com/package/react-use-trigger)
 
-React Hook for trigger effect from any place of code.
+React Hook for trigger effect from any place of code. It is an implementation a Pub-Sub strategy on React Hooks. 
 
 ```javascript
 import {createTrigger, useTriggerEffect} from "react-use-trigger";
