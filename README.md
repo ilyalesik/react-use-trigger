@@ -25,6 +25,20 @@ export const Sender = () => {
 }
 ```
 
+Also, `useTrigger` may be used for combine with other inputs:
+```javascript
+export const Subscriber = (props) => {  
+    const fooTriggerValue = useTrigger(fooTrigger);
+    const [someState, setSomeState] = useState();
+    
+    useEffect(() => {
+        // make some effect
+    }, [fooTriggerValue, props.someProp, someState]);
+  
+    return <div />;
+}
+```
+
 ## Installation
 
 Install it with yarn:
