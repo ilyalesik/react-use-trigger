@@ -30,7 +30,7 @@
       }
   },
   "jest": {
-    "setupTestFrameworkScriptFile": "./setupTests.js",
+    "setupTestFrameworkScriptFile": "./jest/setupTests.js",
     "moduleNameMapper": {
       "\\.(svg|png)$": "<rootDir>/__mocks__/fileMock.js"
     }
