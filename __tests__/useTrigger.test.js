@@ -1,18 +1,19 @@
 import React, { useEffect } from "react";
 import { render, wait } from "react-testing-library";
-import { createTrigger } from "../createTrigger";
-import { useTrigger } from "../useTrigger";
-import { useTriggerEffect } from "../useTriggerEffect";
+import createTrigger from "../index";
+import useTrigger from "../useTrigger";
 
-describe("useTriggerEffect", () => {
+describe("useTrigger", () => {
     it("call trigger", async () => {
         const trigger = createTrigger();
         const effect = jest.fn();
 
         const Component = () => {
-            useTriggerEffect(() => {
+            const triggerValue = useTrigger(trigger);
+
+            useEffect(() => {
                 effect();
-            }, trigger);
+            }, [triggerValue]);
 
             return <div />;
         };
