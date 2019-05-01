@@ -40,8 +40,9 @@
     "src"
   ],
   "pre-commit": [
-    "flow:check",
-    "test"
+      "lint",
+      "flow:check",
+      "test"
   ],
   "size-limit": [
       {
