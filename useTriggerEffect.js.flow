@@ -1,0 +1,4 @@
+// @flow
+import type { TriggerWrapper } from "./TriggerWrapper";
+type MaybeCleanUpFn = void | (() => void);
+declare export var useTriggerEffect: (create: () => MaybeCleanUpFn, trigger: TriggerWrapper) => any;
