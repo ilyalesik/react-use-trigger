@@ -40,6 +40,10 @@
         "test",
         "check-size"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/ilyalesik/react-use-trigger.git"
+    },
     "size-limit": [
         {
             "path": "index.js",
@@ -69,6 +73,10 @@
     ],
     "author": "Ilya Lesik <ilialesik@gmail.com>",
     "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ilyalesik/react-use-trigger/issues"
+    },
+    "homepage": "https://github.com/ilyalesik/react-use-trigger#readme",
     "dependencies": {
         "nanoid": "^2.0.1"
     },
