@@ -1,3 +1,3 @@
 // @flow
-import type { TriggerWrapper } from "./flow/TriggerWrapper";
-declare export var useTrigger: (trigger: TriggerWrapper) => string;
+import type { TriggerWrapper } from "./types/TriggerWrapper";
+declare export default function useTrigger(trigger: TriggerWrapper): string;

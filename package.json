@@ -7,9 +7,10 @@
         "flow": "flow",
         "flow:check": "flow check",
         "test": "jest --silent",
+        "typescript": "tsc -p tsconfig.json --noEmit",
         "check-size": "size-limit",
         "lint": "eslint '**/*.{js,jsx}' --quiet",
-        "prepublish": "npm run flow:check && npm run test && npm run lint && npm run check-size"
+        "prepublish": "npm run flow:check && npm run test && npm run lint && npm run check-size && npm run typescript"
     },
     "keywords": [
         "react",
@@ -101,6 +102,7 @@
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
         "react-testing-library": "^6.0.3",
-        "size-limit": "^1.0.0"
+        "size-limit": "^1.0.0",
+        "typescript": "^3.4.5"
     }
 }
