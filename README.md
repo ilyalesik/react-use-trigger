@@ -6,7 +6,7 @@
 React Hook for trigger effect from any place of code. It is an implementation a Pub-Sub strategy on React Hooks. 
 
 * **Small** 305 bytes (minified and gzipped).
-* **Flow** types included.
+* Both **Flow** and **TS** types included.
 
 ```javascript
 import createTrigger from "react-use-trigger";
