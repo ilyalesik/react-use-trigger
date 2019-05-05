@@ -1,6 +1,6 @@
 {
     "name": "react-use-trigger",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "description": "React effect trigger hook",
     "scripts": {
         "flow": "flow",
@@ -31,8 +31,16 @@
         }
     },
     "files": [
-        "dist",
-        "src"
+        "types",
+        "index.js",
+        "index.js.flow",
+        "index.d.ts",
+        "useTrigger.js",
+        "useTrigger.js.flow",
+        "useTrigger.d.ts",
+        "useTriggerEffect.js",
+        "useTriggerEffect.js.flow",
+        "useTriggerEffect.d.ts"
     ],
     "pre-commit": [
         "lint",
