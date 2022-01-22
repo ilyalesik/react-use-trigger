@@ -86,7 +86,7 @@
     },
     "homepage": "https://github.com/ilyalesik/react-use-trigger#readme",
     "dependencies": {
-        "nanoid": "^2.0.1"
+        "nanoid": "^3.1.31"
     },
     "peerDependencies": {
         "react": ">=16.8.0"
